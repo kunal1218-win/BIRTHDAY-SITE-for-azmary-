@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Site-for Azmary💝 </title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Background audio -->
+<audio id="bgMusic" src="assets/audio/bg.mp3" loop></audio>
+<audio id="lyricsMusic" src="assets/audio/lyrics.mp3"></audio>
+
+<!-- Stage 1: Panda / Enter My World -->
+<div class="page active" id="panda">
+  <div class="center">
+    <!-- Panda GIF top -->
+    <img src="https://media.tenor.com/XYB-y9Bjo6AAAAAj/mimibubu.gif" alt="Animated Panda" class="panda-gif">
+    <!-- Title below panda -->
+    <h1 class="glow">Enter My World 💫</h1>
+    <!-- Button below title -->
+    <button id="enterBtn" class="glow-btn">Enter My World 💫</button>
+  </div>
+</div>
+
+<!-- Stage 2: Lyrics page (hidden for now) -->
+<div class="page" id="lyrics">
+  <div class="center">
+    <div class="lyrics-box">
+      <h2 id="lyricsText">NOTE</h2>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="page" id="message">
+  <div class="center">
+
+    <!-- Panda GIF (same URL from first page) -->
+    <img src="https://media.tenor.com/cOD5HLgxnDAAAAAi/mimibubu.gif" 
+         alt="Animated Panda" 
+         class="panda-gif">
+
+    <!-- Decorative Pink Glass Card -->
+    <div class="message-card">
+      <h2 class="card-title">Azmary ❤️</h2>
+      <p class="card-text">
+        You are not just part of my life🫠💝…<br>
+        You are the reason it feels beautiful👀.
+      </p>
+      <p class="signature">– Kunal🤓</p>
+    </div>
+
+    <!-- Button BELOW card -->
+    <button id="toVideo" class="glow-btn">
+      Something Special Awaits ✨
+    </button>
+
+  </div>
+</div>
+
+
+<div class="page" id="specialVideo">
+  <video id="specialVid" src="assets/videos/special.mp4"></video>
+</div>
+
+
+
+<div class="page" id="birthday">
+  <div class="center">
+
+    <!-- Panda GIF -->
+    <img src="https://media1.tenor.com/m/nyJruipHEaoAAAAC/hbd-hbdc.gif" 
+         alt="Animated Panda" 
+         class="panda-gif">
+
+    <!-- Birthday Card -->
+    <div class="birthday-card">
+
+      <h1 class="bday-title">Happy Birthday, Azmary ❤️</h1>
+
+      <p class="bday-wish">
+        Wishing my cupcake a happy birthday.😺
+      </p>
+
+      <p class="bday-message">
+       I can’t wait to celebrate with you, baby. come with me on Bed 🌚😾
+      </p>
+
+      <p class="bday-from">– Kunal😌</p>
+
+      <!-- Floating Flowers Inside Card -->
+      <div class="flower-container"></div>
+
+    </div>
+
+    <!-- Button BELOW card -->
+    <button id="nextStage" class="glow-btn">
+      Open Our Beautiful Memories 🎁
+    </button>
+
+  </div>
+</div>
+
+
+
+
+<!-- MEMORIES / PHOTO PAGE -->
+<section id="memories" class="page">
+  <div class="center">
+    <div class="photo-gallery">
+      <img src="assets/images/photo1.jpeg" class="memory" data-index="0" alt="Photo 1">
+      <img src="assets/images/photo2.jpeg" class="memory" data-index="1" alt="Photo 2">
+      <img src="assets/images/photo3.jpeg" class="memory" data-index="2" alt="Photo 3">
+      <img src="assets/images/photo4.jpeg" class="memory" data-index="3" alt="Photo 4">
+      <img src="assets/images/photo5.jpeg" class="memory" data-index="4" alt="Photo 5">
+      <img src="assets/images/photo6.jpeg" class="memory" data-index="5" alt="Photo 6">
+      <img src="assets/images/photo7.jpeg" class="memory" data-index="6" alt="Photo 7">
+      <img src="assets/images/photo8.jpeg" class="memory" data-index="7" alt="Photo 8">
+      <img src="assets/images/photo9.jpeg" class="memory" data-index="8" alt="Photo 9">
+      <img src="assets/images/photo10.jpeg" class="memory" data-index="9" alt="Photo 10">
+      <img src="assets/images/photo11.jpeg" class="memory" data-index="5" alt="Photo 11">
+      <img src="assets/images/photo12.jpeg" class="memory" data-index="6" alt="Photo 12">
+      <img src="assets/images/photo13.jpeg" class="memory" data-index="7" alt="Photo 13">
+      <img src="assets/images/photo14.jpeg" class="memory" data-index="8" alt="Photo 14">
+      <img src="assets/images/photo15.jpeg" class="memory" data-index="9" alt="Photo 15">
+    </div>
+
+<p class="gallery-note">Click on any image to view it in full screen ✨</p>
+
+<div id="photo-note">
+  <button id="openHeartBtn" class="glass-btn">
+    Open Special Videos 🎥
+  </button>
+</div>
+
+
+    <!-- FULL SCREEN OVERLAY -->
+    <div id="photo-overlay" class="hidden">
+      <span id="close-overlay">&#10006;</span>
+      <img id="overlay-img" src="">
+      <span id="overlay-prev">&#8592;</span>
+      <span id="overlay-next">&#8594;</span>
+    </div>
+  </div>
+</section>
+
+<section id="video-page" class="page hidden">
+  <div class="center">
+    <h1 class="gold">Special Videos 🎥</h1>
+
+    <!-- Video Gallery -->
+    <div class="video-gallery">
+      <video class="video-item" data-index="0" src="assets/videos/video1.mp4" muted></video>
+      <video class="video-item" data-index="1" src="assets/videos/video2.mp4" muted></video>
+      <video class="video-item" data-index="2" src="assets/videos/video3.mp4" muted></video>
+      <video class="video-item" data-index="3" src="assets/videos/video4.mp4" muted></video>
+    </div>
+     <p class="gallery-note">
+  Click on any video to view it in full screen ✨
+</p>
+    <!-- Button below gallery to go Normal Voice Page -->
+    <div id="video-note">
+      <button id="video-open-btn" class="glow-btn">Open Voice Notes 🎤</button>
+    </div>
+     
+
+    <!-- FULL SCREEN OVERLAY -->
+    <div id="video-overlay" class="hidden">
+      <span id="video-close">&#10006;</span>
+      <video id="overlay-video" controls></video>
+      <span id="video-prev">&#8592;</span>
+      <span id="video-next">&#8594;</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="voice-page" class="page page">
+  <div class="center">
+
+    <!-- Small Panda on Top -->
+    <img src="https://media.tenor.com/lHCzlH_ez84AAAAi/cute-love.gif"
+         class="panda-small"
+         alt="Panda">
+
+    <!-- Title -->
+    <h2 class="voice-title">"This is the thing you gave me,
+                and now it’s the most special in my life."🎧
+              </h2>
+
+    <!-- Normal Voice Buttons -->
+    <div class="voice-gallery">
+      <button class="voice-btn" data-src="assets/audio/voice1.mp3">Voice 1</button>
+      <button class="voice-btn" data-src="assets/audio/voice2.mp3">Voice 2</button>
+      <button class="voice-btn" data-src="assets/audio/voice3.mp3">Voice 3</button>
+      <button class="voice-btn" data-src="assets/audio/voice4.mp3">Voice 4</button>
+      <button class="voice-btn" data-src="assets/audio/voice5.mp3">Voice 5</button>
+      <button class="voice-btn" data-src="assets/audio/voice6.mp3">Voice 6</button>
+      <button class="voice-btn" data-src="assets/audio/voice7.mp3">Voice 7</button>
+      <button class="voice-btn" data-src="assets/audio/voice8.mp3">Voice 8</button>
+    </div>
+
+    <!-- Special Voice Notes -->
+    <div class="special-voice-box">
+      <button class="voice-btn special" data-src="assets/audio/special1.mp3">Special 1</button>
+      <button class="voice-btn special" data-src="assets/audio/special2.mp3">Special 2</button>
+    </div>
+
+    <!-- Horizontal Line -->
+    <hr class="special-line">
+
+    <!-- Footer Title -->
+    <h3 class="special-footer-title">"Always stay happy. Im Good boy🌚🐼."</h3>
+
+  </div>
+  <audio id="voice-player"></audio>
+</section>
